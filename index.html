@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Quieres ser mi San Valentín preciosa?</title>
+  <link rel="icon" type="image/jpg" href="../img/logo-removebg-preview.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; 
+      background-color: pink;
+      font-family: Arial, sans-serif;
+      background-image: url("img/fondo-pantalla-borroso-dia-san-valentin_23-2148819570.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    #container {
+      text-align: center;
+    }
+    h1 {
+      font-size: 50px;
+      color: #333;
+      font-family: serif;
+    }
+    p {
+      font-size: 15 px;
+    }
+    #buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #btnNo {
+      background-color: #f44336;
+    }
+    #btnNo:hover {
+      background-color: #d32f2f;
+    }
+    img {
+      margin-top: 30px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <script>
+    function accionParaCuandoEllaDigaQueSi() {
+      alert("¡Perdón mi amor! ❤️");
+    }
+
+    function mueveElBoton() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      const newWidth = Math.random() * width;
+      const newHeight = Math.random() * height;
+
+      const btnNo = document.getElementById("btnNo");
+      btnNo.style.position = "absolute";
+      btnNo.style.left = newWidth + "px";
+      btnNo.style.top = newHeight + "px";
+    }
+  </script>
+</head>
+<body>
+    <div id="container">
+      <h1>¿Quieres ser mi San Valentín preciosa?</h1>
+      <div id="buttons">
+        <button onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi">Sí</button>
+        <button id="btnNo" onmouseover="mueveElBoton()">No</button>
+      </div>
+      <img src="img/5ca7b46c9d588371cc4f451a5a42679b.gif" alt="200" width="200">
+      <p>Perdón por como te traté estos días y por no haberte dado un feliz día, te amo mucho mi cielo <3</p>
+    </div>
+  
+    <script>
+      function accionParaCuandoEllaDigaQueSi() {
+        const respuesta = confirm("¿Estás segura de continuar?");
+        if (respuesta) {
+          // Redireccionar a la nueva página si responde "Sí"
+          window.location.href = "opcionsi.html";
+        } else {
+          alert("monki troste :( ");
+        }
+      }
+  
+      function mueveElBoton() {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+  
+        const newWidth = Math.random() * width;
+        const newHeight = Math.random() * height;
+  
+        const btnNo = document.getElementById("btnNo");
+        btnNo.style.position = "absolute";
+        btnNo.style.left = newWidth + "px";
+        btnNo.style.top = newHeight + "px";
+      }
+    </script>
+    <p style="background-image: url('img/fondo-pantalla-borroso-dia-san-valentin_23-2148819570.jpg');">
+
+  </body>
+  </html>
